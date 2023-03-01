@@ -1,0 +1,29 @@
+/* CSS Document */
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body, ul, li, div, a {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* 万能清除法:在在所有的解决高度塌陷的里面,比较好的一个方法 */
+.clear-fix::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+    visibility: hidden;
+}
+
+body {
+    background: url("/img/body.jpg") no-repeat center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}

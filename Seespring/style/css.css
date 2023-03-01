@@ -1,0 +1,130 @@
+/*首页公共部分*/
+header, nav, min, footer {
+    width: 100%;
+    display: flex;
+    /*弹性布局*/
+    justify-content: center; /*水平居中*/
+    align-items: center; /*垂直居中*/
+}
+
+.type-area {
+    width: 1920px;
+}
+
+.header-min, .nav-min, .main-main, .footer-main {
+    width: 90%;
+}
+
+/*头部*/
+header {
+    height: 30px;
+    background: rgb(192, 194, 220, 25.6%);
+    /*overflow: hidden;*/
+    /*display:flex;*/
+    border-radius: 30px; /*圆形边框*/
+    position: fixed;
+
+}
+
+.header-min {
+    color: white;
+}
+
+#time {
+    float: left;
+    width: 300px;
+    position: absolute;
+}
+
+.Links {
+    /*width: 500px;*/
+    float: right;
+    /*overflow: hidden; 定位*/
+}
+
+.Links ul li {
+    float: left;
+}
+
+.Links a {
+    color: white;
+}
+
+.Links a:hover {
+    color: rebeccapurple;
+    font: bold 15px "宋体";
+}
+
+/*导航栏*/
+nav {
+    height: 150px;
+    /*margin-top: 30px;*/
+    /*position: relative;*/
+}
+
+.logo {
+    width: 80px;
+    float: left;
+    color: white;
+}
+
+.nav-min {
+    height: 80px;
+    line-height: 80px;
+}
+
+.div_nav {
+    width: 757px;
+    height: 80px;
+    float: left;
+}
+.div_nav ul{
+    height: 80px;
+}
+.div_nav ul li {
+    width: 100px;
+    height: 60px;
+    float: left;
+}
+
+.div_nav ul a {
+    width: 100%;
+    height: 40px;
+    color: black;
+    font: bold 18px "宋体";
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 20px;
+}
+.div_nav ul a:hover{
+    color: white;
+    font: bold 20px "宋体";
+}
+.second {
+    display: none;
+    /*position: absolute;*/
+}
+.div_nav>ul>li:hover .second {
+    display: block;
+}
+/*主体*/
+min {
+    height: 1000px;
+    margin: 40px auto 80px auto;
+}
+
+.main-main {
+    background: rgb(255, 255, 255, 37.8%);
+    border-radius: 25px;
+}
+
+/*尾部*/
+footer {
+    height: 200px;
+    background: rgb(123, 144, 161, 61.8%);
+    border-radius: 70px; /*圆形边框*/
+}
+.copyright{
+    text-align: center;
+}

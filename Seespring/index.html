@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <title>归去网</title>
+    <link rel="stylesheet" href="style/reas.css">
+    <link rel="stylesheet" href="style/css.css">
+</head>
+
+<body>
+<!--头部-->
+<header>
+    <div class="type-area">
+        <div class="header-min">
+            <div id="time">现在的时间是：</div>
+            <script type="text/javascript">
+                //输出时间
+                function fn() {
+                    var time = new Date();
+                    var str = "";
+                    var div = document.getElementById("time");
+                    //年、月、日、时、分、秒、星期
+                    var year = time.getFullYear();
+                    var mon = time.getMonth() + 1;
+                    var day = time.getDate();
+                    var h = time.getHours();
+                    var m = time.getMinutes();
+                    var s = time.getSeconds();
+                    var week = time.getDay();
+                    switch (week) {
+                        case 0:
+                            week = "日";
+                            break;
+                        case 1:
+                            week = "一";
+                            break;
+                        case 2:
+                            week = "二";
+                            break;
+                        case 3:
+                            week = "三";
+                            break;
+                        case 4:
+                            week = "四";
+                            break;
+                        case 5:
+                            week = "五";
+                            break;
+                        case 6:
+                            week = "六";
+                            break;
+                    }
+                    str = year + "年" + totwo(mon) + "月" + totwo(day) + "日" + "&nbsp;" + totwo(h) + ":" + totwo(m) + ":" + totwo(s) + "&nbsp;" + "星期" + week;
+
+                    // str = year +"年"+mon+"月"+day+"日"+"&nbsp;"+h+":"+m+":"+s+"&nbsp;"+"星期"+week;
+
+                    div.innerHTML = str;
+                }
+
+                fn();
+
+                //设置每秒刷新一次日期
+                setInterval(fn, 1000);
+
+                //当月份或者日期是一位数的时候显示前面加一个0 比如2020年08月04日 18:20:53 星期二
+                function totwo(n) {
+                    if (n <= 9) {
+                        return n = "0" + n;
+                    } else {
+                        return n = "" + n;
+                    }
+                }
+            </script>
+            <div class="Links">
+                <ul>
+                    <li><a href="https://a1l.xyz/" target="_blank">归去网</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                    </li>
+                    <li><a href="https://adlerian.xyz/">归去网Zurück ins netz</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                    </li>
+                    <li><a href="https://seespring.com.cn">见春天-see spring</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!--导航栏-->
+<nav>
+    <div class="type-area">
+        <div class="nav-min">
+            <div class="div_nav"><a href="index.html"><img src="img/logo/logo.png" alt="图标" class="logo"></a>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a>社交名片</a>
+                        <ul class="second">
+                            <li>
+                                <a href="https://www.douyin.com/user/MS4wLjABAAAAjCk98EVqUpvgJ_I1X3_SPFNKsex3jwmSdW2nde9y3Eg"
+                                   target="_blank">抖音主页</a></li>
+                            <li><a href="https://weibo.com/u/6207359318" target="_blank">微博主页</a></li>
+                            <li><a href="https://space.bilibili.com/451826931?spm_id_from=333.1007.0.0" target="_blank">B站主页</a>
+                            </li>
+                            <li><a href="https://www.xiaohongshu.com/user/profile/636d2efd000000001f01b721"
+                                   target="_blank">小红书</a></li>
+                            <li><a href="https://www.zhihu.com/people/lni-adler" target="_blank">知乎主页</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">站长简介</a></li>
+                    <li><a href="https://blog.csdn.net/qq_54026286?spm=1000.2115.3001.5343" target="_blank">博客</a></li>
+                    <li><a href="relevant.html">相关链接</a></li>
+                    <li><a href="about.html">关于本站</a></li>
+                </ul>
+            </div>
+            <div></div>
+        </div>
+    </div>
+</nav>
+<!--主体-->
+<min>
+    <div class="type-area">
+        <div class="main-main"></div>
+    </div>
+</min>
+<!--尾部-->
+<footer>
+    <div class="type-area">
+        <div class="footer-main">
+            <div class="Friendship-link">
+
+            </div>
+            <div class="copyright">
+                <p>2021-2023  &copy;  归去网   Zurück ins netz. 版权所有</p>
+                <p>备案号:<a href="https://beian.miit.gov.cn/">鲁ICP备2022007593号-1</a> | <img src="img/fonn.png" alt=""><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37170202666291">鲁公网安备 37170202666291号</a></p>
+            </div>
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>
